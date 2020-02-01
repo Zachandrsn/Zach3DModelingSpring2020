@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Man.ma
-//Last modified: Sat, Feb 01, 2020 12:47:42 AM
+//Last modified: Sat, Feb 01, 2020 12:48:46 AM
 //Codeset: UTF-8
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "0472448F-4DCD-DDC9-FBC8-2EB531F5CAEF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 1.0034036621652211 4.167975194805484 21.650707384391694 ;
-	setAttr ".r" -type "double3" -359.13835273292784 -716.5999999999508 -1.8668923103842005e-17 ;
+	setAttr ".t" -type "double3" 5.292989570062657 11.007288583634343 -12.476119831662404 ;
+	setAttr ".r" -type "double3" -386.13835273289692 -924.99999999985778 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "A43EE583-438C-FD1A-6280-A1B6E8CCDF9C";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 22.15220857451666;
+	setAttr ".coi" 14.768659544999391;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -84,7 +84,7 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 0.5 ;
+	setAttr ".pv" -type "double2" 0.50000001490116119 0.25 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 582 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.375 0 0.625 0 0.375 0.25
@@ -235,8 +235,8 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr -s 57 ".pt";
 	setAttr ".pt[2]" -type "float3" -0.044947889 -0.065789446 0 ;
 	setAttr ".pt[3]" -type "float3" 0.044947889 -0.065789446 0 ;
-	setAttr ".pt[8]" -type "float3" 0 -0.029433332 -0.024309048 ;
-	setAttr ".pt[9]" -type "float3" 0 -0.029433332 -0.024309048 ;
+	setAttr ".pt[8]" -type "float3" 0 -0.13656355 -0.13559857 ;
+	setAttr ".pt[9]" -type "float3" 0 -0.13656355 -0.13559857 ;
 	setAttr ".pt[12]" -type "float3" -0.0583793 -0.025137687 -0.16541241 ;
 	setAttr ".pt[13]" -type "float3" 0.0583793 -0.025137687 -0.16541241 ;
 	setAttr ".pt[18]" -type "float3" -0.063726202 0 0 ;
@@ -271,13 +271,13 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 	setAttr ".pt[506]" -type "float3" -0.15265118 -0.079381734 0.04162433 ;
 	setAttr ".pt[508]" -type "float3" -0.017676007 -0.0087145809 0.11703984 ;
 	setAttr ".pt[510]" -type "float3" 0.010355666 0.09617094 -0.078873239 ;
-	setAttr ".pt[511]" -type "float3" 0 -0.061734591 -0.052612454 ;
+	setAttr ".pt[511]" -type "float3" 0 -0.14873858 -0.18017504 ;
 	setAttr ".pt[512]" -type "float3" 0.11034674 -0.039183363 0.064417869 ;
 	setAttr ".pt[513]" -type "float3" -0.057570346 -0.075664528 0 ;
 	setAttr ".pt[514]" -type "float3" 0.15265118 -0.079381734 0.04162433 ;
 	setAttr ".pt[516]" -type "float3" 0.017676007 -0.0087145809 0.11703984 ;
 	setAttr ".pt[518]" -type "float3" -0.010355666 0.09617094 -0.078873239 ;
-	setAttr ".pt[519]" -type "float3" 0 -0.061734591 -0.052612454 ;
+	setAttr ".pt[519]" -type "float3" 0 -0.14873858 -0.18017504 ;
 	setAttr ".pt[520]" -type "float3" -0.11034674 -0.039183363 0.064417869 ;
 	setAttr ".pt[521]" -type "float3" 0.063870259 0.0065150587 0.24634577 ;
 	setAttr ".pt[522]" -type "float3" -0.063870303 -0.30238456 0.24422346 ;
