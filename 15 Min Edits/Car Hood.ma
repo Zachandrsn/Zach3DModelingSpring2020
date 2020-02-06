@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Car Hood.ma
-//Last modified: Thu, Feb 06, 2020 11:20:31 AM
+//Last modified: Thu, Feb 06, 2020 11:21:44 AM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,8 +13,8 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "9DE611EE-4A67-F749-7497-13A97BD382AE";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -32.769642366438134 1.1855277630295182 30.699453413132282 ;
-	setAttr ".r" -type "double3" -2.7383527299465924 304.9999999999784 -3.4657049173113962e-16 ;
+	setAttr ".t" -type "double3" -38.081978682138207 7.7274273474573061 19.172102866428826 ;
+	setAttr ".r" -type "double3" -9.9383527299496119 651.00000000002342 -2.2187772968367023e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "97D13E3C-482E-1A74-CE33-B08DA9E45E01";
 	setAttr -k off ".v" no;
