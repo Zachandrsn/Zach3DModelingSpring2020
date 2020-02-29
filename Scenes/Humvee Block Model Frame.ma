@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Humvee Block Model Frame.ma
-//Last modified: Sat, Feb 29, 2020 04:36:49 PM
+//Last modified: Sat, Feb 29, 2020 04:39:25 PM
 //Codeset: UTF-8
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,15 +15,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "836E1D2C-41B5-07D6-203B-F29348F60A93";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -10.098289643967441 21.321195694673982 95.560477047901216 ;
-	setAttr ".r" -type "double3" 714.26164736196506 -4318.1999999999325 3.7290525796812835e-17 ;
+	setAttr ".t" -type "double3" 0.14395028694122836 11.035135136723033 40.785912995961795 ;
+	setAttr ".r" -type "double3" 714.8616473620184 -4312.9999999996808 -2.5034688218639237e-16 ;
 	setAttr ".rp" -type "double3" 0 0 1.7763568394002505e-15 ;
 	setAttr ".rpt" -type "double3" 5.1368985977959808e-15 -8.338432878689932e-16 -5.8032207483898942e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "9A305AE1-45A3-D081-1F15-72B6A61E1E62";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 105.65177441475024;
+	setAttr ".coi" 44.477799102018786;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
